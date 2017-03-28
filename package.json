@@ -1,0 +1,23 @@
+{
+  "name": "acme-users-products-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "npm run webpack -- -w & DATABASE_URL=postgres://localhost/acme_users_products_react nodemon --ignore dist/ --ignore src/ server.js",
+    "webpack" : "./node_modules/webpack/bin/webpack.js",
+    "postinstall": "npm run webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helicopta/acme-users-products-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helicopta/acme-users-products-react/issues"
+  },
+  "homepage": "https://github.com/helicopta/acme-users-products-react#readme"
+}
